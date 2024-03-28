@@ -24,7 +24,7 @@ export class PanierComponent {
     this.total=this.panie.total.toNumber();
   }
   acheter() {
-    this.recu.Recut(this.panie);
+   // this.recu.Recut(this.panie);
     }
     Delete(arg0: any) {
     this.shop.delete(arg0);

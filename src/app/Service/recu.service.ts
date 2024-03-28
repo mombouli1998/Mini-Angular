@@ -10,13 +10,13 @@ export class RecuService {
 
 
 constructor(){}
-Recut(panie: Panier) {
+/*Recut(panie: Panier) {
   
   let doc = new jsPDF();
     doc.text('Hello world!', 10, 10);
     doc.save('Reçu.pdf')
 
-}
+}*/
 
 
 }
