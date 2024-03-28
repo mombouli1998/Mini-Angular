@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { BureautiqueComponent } from './bureautique/bureautique.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    BureautiqueComponent,
 
   ],
   imports: [
