@@ -7,11 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { BureautiqueComponent } from './bureautique/bureautique.component';
+import { ConsoleComponent } from './console/console.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BureautiqueComponent,
+    ConsoleComponent,
 
   ],
   imports: [
