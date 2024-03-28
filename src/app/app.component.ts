@@ -10,7 +10,7 @@ actioncourante: any;
 
   actions:Array<any>=[
     {title:"Accueil" ,"router":"/home", icon:"bi bi-house"},
-    //{title:"Telephone" ,"router":"/telephone", icon:"bi bi-phone"},
+    {title:"Telephone" ,"router":"/telephone", icon:"bi bi-phone"},
     {title:"Bureautique" ,"router":"/bureautique", icon:"bi bi-easel2"},
     {title:"Consoles" ,"router":"/consoles", icon:"bi bi-joystick"},
     {title:"Jeux-Vidéo" ,"router":"/jeu", icon:"bi bi-dpad-fill"},

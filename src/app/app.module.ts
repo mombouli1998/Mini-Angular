@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { BureautiqueComponent } from './bureautique/bureautique.component';
 import { ConsoleComponent } from './console/console.component';
 import { JeuComponent } from './jeu/jeu.component';
+import { TelephoneComponent } from './telephone/telephone.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { JeuComponent } from './jeu/jeu.component';
     BureautiqueComponent,
     ConsoleComponent,
     JeuComponent,
+    TelephoneComponent,
 
   ],
   imports: [
