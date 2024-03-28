@@ -11,7 +11,7 @@ export class CategorieService {
   constructor(private http:HttpClient) { }
   //Recuperer la liste des produits
   public ListeCategorie():Observable<Array<categorie>>{
-    return this.http.get<Array<categorie>>("http://localhost:3000/categorie");
+    return this.http.get<Array<categorie>>("https://banque-7bq4.onrender.com/categorie");
 }
 
 }
