@@ -8,6 +8,9 @@ import autoTable from 'jspdf-autotable';
   providedIn: 'root'
 })
 export class RecuService {
+Recut(panie: Panier) {
+  throw new Error('Method not implemented.');
+}
 constructor(){}
 
 }
