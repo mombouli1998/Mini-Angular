@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { BureautiqueComponent } from './bureautique/bureautique.component';
 import { ConsoleComponent } from './console/console.component';
+import { JeuComponent } from './jeu/jeu.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BureautiqueComponent,
     ConsoleComponent,
+    JeuComponent,
 
   ],
   imports: [
