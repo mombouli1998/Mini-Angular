@@ -12,6 +12,7 @@ export class RecuService {
 
 constructor(){}
 Recut(panie: Panier) {
+  
   let doc = new jsPDF();
   doc.save('Reçu.pdf');
 
