@@ -8,7 +8,7 @@ import autoTable from 'jspdf-autotable';
   providedIn: 'root'
 })
 export class RecuService {
-  public Recu(produit:Produit){
+  /*public Recu(produit:Produit){
     const doc = new jsPDF()
     const dates= new Date();
 // It can parse html:
@@ -39,7 +39,7 @@ doc.save('Reçu.pdf')
     panier.produits.forEach((produit: Produit) => {
       rows.push([produit.nom, produit.categorie,produit.prix]);
     });
-
+  
     let url="https://i.goopics.net/ahazzy.jpg";
     var x = 10 ; //Position horizontale
     var y = 10 ; //Position verticale
@@ -48,6 +48,7 @@ doc.save('Reçu.pdf')
 
 
     doc.addImage(url, 'JPEG', 10, 10, 190, 100); // Ajustez les dimensions et la position selon vos besoins
+   
     autoTable(doc, {
       body: [
         [
@@ -128,6 +129,6 @@ doc.save('Reçu.pdf')
     });
   
     doc.save('Reçu.pdf');
-  }
+  }*/
 
 }
