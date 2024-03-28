@@ -34,7 +34,7 @@ export class JeuComponent implements OnInit{
     }
     //acheter le produit
     acheter(produit: Produit) {
-      this.route.navigateByUrl("/acheter/"+produit.id);
+      this.route.navigateByUrl("/commande/"+produit.id);
       }
 
 }

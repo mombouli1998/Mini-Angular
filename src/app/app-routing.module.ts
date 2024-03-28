@@ -9,10 +9,11 @@ import { ProduitComponent } from './produit/produit.component';
 import { NewProduitComponent } from './new-produit/new-produit.component';
 import { PanierComponent } from './panier/panier.component';
 import { EditeProductComponent } from './edite-product/edite-product.component';
+import { CommandeComponent } from './commande/commande.component';
 
 
 const routes: Routes = [
- // {path:"", component:HomeComponent},
+ {path:"", component:HomeComponent},
  {path:"home",component:HomeComponent},
  {path:"bureautique", component:BureautiqueComponent},
  {path:"consoles",component:ConsoleComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
  {path:"produit",component:ProduitComponent},
  {path:"newProduit",component:NewProduitComponent},
  {path:"panier", component:PanierComponent},
- {path:"edite/:id",component:EditeProductComponent}
+ {path:"edite/:id",component:EditeProductComponent},
+ {path:"commande/:id",component:CommandeComponent}
  
 ];
 

@@ -34,6 +34,6 @@ export class HomeComponent implements OnInit{
     }
     //acheter produit
     acheter(produit: Produit) {
-      this.route.navigateByUrl("/acheter/"+produit.id);
+      this.route.navigateByUrl("/commande/"+produit.id);
       }
 }

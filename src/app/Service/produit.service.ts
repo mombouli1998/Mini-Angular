@@ -21,7 +21,7 @@ export class ProduitService {
   }
   //modifier le produit cocher
   public cocher(produit:Produit):Observable<Produit>{
-    return this.http.patch<Produit>("http://localhost:3000/produits/"+produit.id,{checked:!produit.checked});
+    return this.http.patch<Produit>("https://banque-7bq4.onrender.com/produits/"+produit.id,{checked:!produit.checked});
   }
   //supprimer le produit
   public DeleteProduit(produit:Produit){

@@ -30,9 +30,13 @@
                             <button (click)="cocher(produit,page)" class="btn btn-outline-success">
                                 <i [class]="produit.checked?'bi bi-check':'bi bi-circle'"></i>
                             </button>
+                        </td>
+                        <td>
                             <button (click)="Delete(produit)" class="btn btn-danger ms-2">
                                 <i class="bi bi-trash"></i>
                             </button>
+                        </td>
+                        <td>  
                             <button (click)="Edite(produit)" class="btn btn-danger ms-2">
                                 <i class="bi bi-pencil"></i>
                             </button>

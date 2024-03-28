@@ -14,6 +14,7 @@ import { ProduitComponent } from './produit/produit.component';
 import { NewProduitComponent } from './new-produit/new-produit.component';
 import { PanierComponent } from './panier/panier.component';
 import { EditeProductComponent } from './edite-product/edite-product.component';
+import { CommandeComponent } from './commande/commande.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { EditeProductComponent } from './edite-product/edite-product.component';
     NewProduitComponent,
     PanierComponent,
     EditeProductComponent,
+    CommandeComponent,
 
   ],
   imports: [
