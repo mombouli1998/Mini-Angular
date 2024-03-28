@@ -8,6 +8,7 @@ import { TelephoneComponent } from './telephone/telephone.component';
 import { ProduitComponent } from './produit/produit.component';
 import { NewProduitComponent } from './new-produit/new-produit.component';
 import { PanierComponent } from './panier/panier.component';
+import { EditeProductComponent } from './edite-product/edite-product.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
  {path:"telephone", component:TelephoneComponent},
  {path:"produit",component:ProduitComponent},
  {path:"newProduit",component:NewProduitComponent},
- {path:"panier", component:PanierComponent}
+ {path:"panier", component:PanierComponent},
+ {path:"edite/:id",component:EditeProductComponent}
  
 ];
 

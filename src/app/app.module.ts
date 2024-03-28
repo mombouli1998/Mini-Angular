@@ -13,6 +13,7 @@ import { TelephoneComponent } from './telephone/telephone.component';
 import { ProduitComponent } from './produit/produit.component';
 import { NewProduitComponent } from './new-produit/new-produit.component';
 import { PanierComponent } from './panier/panier.component';
+import { EditeProductComponent } from './edite-product/edite-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { PanierComponent } from './panier/panier.component';
     ProduitComponent,
     NewProduitComponent,
     PanierComponent,
+    EditeProductComponent,
 
   ],
   imports: [
