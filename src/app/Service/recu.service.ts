@@ -12,7 +12,9 @@ export class RecuService {
 
 constructor(){}
 Recut(panie: Panier) {
-  alert("toto");
+  const doc = new jsPDF();
+  doc.save('Reçu.pdf');
+
 }
 
 
