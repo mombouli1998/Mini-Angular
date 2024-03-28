@@ -75,8 +75,9 @@ export class ProduitComponent {
       }
       //recherche de produit
       Search() {
-        this.PS.Recherche(this.recherche).subscribe({
-          next:data=>{this.produits=data},
+        let searchs:string=this.recherche.toLowerCase();
+        this.PS.Recherche(searchs).subscribe({
+          next:data=>{this.produitsPage=data},
           error(err) {
               console.log(err);
           },

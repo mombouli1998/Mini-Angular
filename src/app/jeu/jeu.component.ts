@@ -25,7 +25,7 @@ export class JeuComponent implements OnInit{
   //recherche des produits de bureautiques
   Search() {
     alert(this.recherche)
-   this.Ps.RechercheProduit("jeux-video",this.recherche).subscribe({
+   this.Ps.RechercheProduit("jeux-video",this.recherche.toLowerCase()).subscribe({
     next:data=>{this.ListeProduit=data},
     error(err) {
         console.log(err);

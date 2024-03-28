@@ -24,7 +24,8 @@ export class ConsoleComponent implements OnInit{
   }
   //recherche des produits de bureautiques
   Search() {
-   this.Ps.RechercheProduit("console",this.recherche).subscribe({
+    
+   this.Ps.RechercheProduit("console",this.recherche.toLowerCase()).subscribe({
     next:data=>{this.ListeProduit=data},
     error(err) {
         console.log(err);

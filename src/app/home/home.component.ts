@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit{
     }
     //Recherche produit
     Search() {
-      this.ps.Recherche(this.recherche).subscribe({
+      this.ps.Recherche(this.recherche.toLowerCase()).subscribe({
         next:data=>{this.ListeProduit=data},
         error(err) {
             console.log(err);

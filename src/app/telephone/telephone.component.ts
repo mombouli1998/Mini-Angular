@@ -26,7 +26,7 @@ export class TelephoneComponent implements OnInit{
   //recherche des produits de bureautiques
   Search() {
     alert(this.recherche)
-   this.Ps.RechercheProduit("telephone",this.recherche).subscribe({
+   this.Ps.RechercheProduit("telephone",this.recherche.toLowerCase()).subscribe({
     next:data=>{this.ListeProduit=data},
     error(err) {
         console.log(err);
