@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Panier } from '../model/panier';
 import { PanierService } from '../Service/panier.service';
 import { RecuService } from '../Service/recu.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-panier',
@@ -11,7 +12,7 @@ import { RecuService } from '../Service/recu.service';
 export class PanierComponent {
   panie!: Panier;
   total!: number;
-  constructor(private shop: PanierService,private recu:RecuService) { }
+  constructor(private shop: PanierService,private recu:RecuService, private route:Router) { }
 
   ngOnInit(): void {
     this.getPanier();
@@ -25,6 +26,8 @@ export class PanierComponent {
   }
   acheter() {
    // this.recu.Recut(this.panie);
+   alert("commande en cours");
+   this.route.navigateByUrl("/home")
     }
     Delete(arg0: any) {
     this.shop.delete(arg0);

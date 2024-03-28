@@ -40,7 +40,7 @@ export class CommandeComponent implements OnInit {
     this.produitModif.quantite= this.produitModif.quantite-1;
     this.PS.Modifie( this.produitModif).subscribe({
       next:data=>{
-        alert("produit acheter");
+        alert("produit ajouter au panier");
       },
       error(err) {
           console.log(err);

@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-actioncourante: any;
 
-  actions:Array<any>=[
+
+  actions=[
     {title:"Accueil" ,"router":"/home", icon:"bi bi-house"},
     {title:"Telephone" ,"router":"/telephone", icon:"bi bi-phone"},
     {title:"Bureautique" ,"router":"/bureautique", icon:"bi bi-easel2"},
@@ -17,9 +17,18 @@ actioncourante: any;
     {title:"Produit" ,"router":"/produit", icon:"bi bi-arrow-down-up"},
     {title:"New_Produit" ,"router":"/newProduit", icon:"bi bi-plus-circle"},
     {title:"" ,"router":"/panier", icon:"bi bi-basket"},
-  ]
-  ActionC(_t7: any) {
-    this.actioncourante=_t7;
-
+  ];
+    actioncourante = this.actions[0];
+    isResponsive = false;
+  
+    ActionC(action: any): void {
+      this.actioncourante = action;
+    }
+  
+    toggleResponsive(): void {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        navbar.classList.toggle('responsive');
+      }
     }
 }
