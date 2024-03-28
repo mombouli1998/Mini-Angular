@@ -13,7 +13,7 @@ export class ProduitService {
   //Recuperer la liste des produits
   public ListeProduitsPage(page:number=1,size:number=5):Observable<Array<Produit>>{
     //let size:number=5;
-    return this.http.get<Array<Produit>>(`https://banque-7bq4.onrender.com?_start=${page}&_limit=${size}`);
+    return this.http.get<Array<Produit>>(`https://banque-7bq4.onrender.com/produits?_start=${page}&_limit=${size}`);
 }
   //Recuperer la liste des produits
   public ListeProduits():Observable<Array<Produit>>{
