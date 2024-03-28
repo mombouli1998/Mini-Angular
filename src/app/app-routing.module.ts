@@ -5,6 +5,9 @@ import { BureautiqueComponent } from './bureautique/bureautique.component';
 import { ConsoleComponent } from './console/console.component';
 import { JeuComponent } from './jeu/jeu.component';
 import { TelephoneComponent } from './telephone/telephone.component';
+import { ProduitComponent } from './produit/produit.component';
+import { NewProduitComponent } from './new-produit/new-produit.component';
+import { PanierComponent } from './panier/panier.component';
 
 
 const routes: Routes = [
@@ -13,7 +16,10 @@ const routes: Routes = [
  {path:"bureautique", component:BureautiqueComponent},
  {path:"consoles",component:ConsoleComponent},
  {path:"jeu",component:JeuComponent},
- {path:"telephone", component:TelephoneComponent}
+ {path:"telephone", component:TelephoneComponent},
+ {path:"produit",component:ProduitComponent},
+ {path:"newProduit",component:NewProduitComponent},
+ {path:"panier", component:PanierComponent}
  
 ];
 

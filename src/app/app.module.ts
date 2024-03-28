@@ -10,6 +10,9 @@ import { BureautiqueComponent } from './bureautique/bureautique.component';
 import { ConsoleComponent } from './console/console.component';
 import { JeuComponent } from './jeu/jeu.component';
 import { TelephoneComponent } from './telephone/telephone.component';
+import { ProduitComponent } from './produit/produit.component';
+import { NewProduitComponent } from './new-produit/new-produit.component';
+import { PanierComponent } from './panier/panier.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +21,9 @@ import { TelephoneComponent } from './telephone/telephone.component';
     ConsoleComponent,
     JeuComponent,
     TelephoneComponent,
+    ProduitComponent,
+    NewProduitComponent,
+    PanierComponent,
 
   ],
   imports: [
