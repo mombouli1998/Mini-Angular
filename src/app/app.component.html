@@ -1,70 +1,22 @@
-<!--<div class="d-flex justify-content-between ">
-   <div>
-     <nav class="p-3">
-       <ul class="nav nav-pills">
-           <li *ngFor="let action of actions">
-               <button
-               routerLink="{{action.router}}"
-                (click)="ActionC(action)"
-                [class]="action==actioncourante?'btn btn-success ms-3':'btn btn-outline-success ms-3'"
-                *ngIf="action.router!='/panier'">{{action.title}}
-                 <i class="{{action.icon}}"></i>
-               </button>
-              
-           </li>  
-       </ul>     
- </nav>
-   </div>
-   <div>
-     <nav class="p-3">
-       <ul class="nav nav-pills">
-           <li *ngFor="let action of actions">
-                 <button
-                 class="btn btn-outline-success"
-               routerLink= "{{action.router}}"
-                (click)="ActionC(action)"
-                *ngIf="action.router=='/panier'">
-                 <i class="{{action.icon}}"></i>
-               </button>
-           </li>  
-       </ul>     
-     </nav>
-   </div>
- </div>
--->
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav p-3">
-        <li *ngFor="let action of actions">
-          <button
-          routerLink="{{action.router}}"
-           (click)="ActionC(action)"
-           [class]="action==actioncourante?'btn btn-success ms-4':'btn btn-outline-success ms-4'"
-           class="custom-button"
-           *ngIf="action.router!='/panier'">{{action.title}}
-            <i class="{{action.icon}}"></i>
-          </button>
-      </li>  
-      </ul>
-      <ul class="nav nav-pills p-3">
-        <li *ngFor="let action of actions">
-              <button
-              class="btn btn-outline-success ms-4"
-            routerLink= "{{action.router}}"
-             (click)="ActionC(action)"
-             *ngIf="action.router=='/panier'">
-              <i class="{{action.icon}}"></i>
-            </button>
-        </li>  
-    </ul> 
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <a class="navbar-brand ms-3" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="navbar-nav"  *ngFor="let action of actions">
+      <a
+      routerLink="{{action.router}}"
+      (click)="ActionC(action)"
+      [class]="action==actioncourante?'nav-item nav-link  ms-4':'nav-item nav-link active ms-4'"
+      class="custom-button"
+   
+    >
+      {{action.title}}
+      <i class="{{action.icon}}"></i>
+    </a>
+   
     </div>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
