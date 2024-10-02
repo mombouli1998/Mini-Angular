@@ -1,27 +1,13 @@
 # ProjetMini
+### Application Web de Vente de Produits
+## Description :
+Créez une application web pour un site commercial dédié à la vente de produits. Cette application permettra aux utilisateurs de naviguer à travers une sélection de produits, de consulter les détails de chaque produit, et d'ajouter des articles à leur panier.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+## Frontend (Angular) :
+Utilisez Angular CLI pour le développement du frontend. L'application affichera une liste de produits, des pages de détails pour chaque produit, et un système de panier pour la gestion des articles sélectionnés par les utilisateurs.
 
-## Development server
+## Backend (JSON Server) : 
+Un serveur léger sera mis en place à l'aide de JSON Server pour simuler une API RESTful. Ce backend permettra de gérer les produits, y compris les opérations de création, de lecture, de mise à jour et de suppression (CRUD) des articles.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Déploiement :
+L'application sera déployée sur un serveur d'hébergement comme Render, ce qui facilitera l'accès à l'application web en ligne. Ce projet ne comportera pas de système d'authentification, simplifiant ainsi le processus d'utilisation pour les visiteurs du site.
