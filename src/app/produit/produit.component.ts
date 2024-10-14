@@ -60,18 +60,20 @@ export class ProduitComponent {
           console.log(err);
       },
 
-    })
+    });
+    this.refreshPage();
     }
 
     //suppression du produit
     Delete(produit: Produit) {
       if(confirm("confimez vous la suppression du produit ?"+produit.nom))
       this.PS.DeleteProduit(produit).subscribe({
-        next:data=>{this.getProduits();},
+        next:data=>{},
         error(err) {
             console.log(err)
         },
       })
+      this.refreshPage();
       }
       //recherche de produit
       Search() {
@@ -99,5 +101,10 @@ export class ProduitComponent {
             },
            })
           }
+
+   //rechargement de la page
+    refreshPage(): void {
+      window.location.reload();
+    }
 
 }
