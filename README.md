@@ -1,13 +1,25 @@
-# ProjetMini
-### Application Web de Vente de Produits
-## Description :
-Créez une application web pour un site commercial dédié à la vente de produits. Cette application permettra aux utilisateurs de naviguer à travers une sélection de produits, de consulter les détails de chaque produit, et d'ajouter des articles à leur panier.
 
-## Frontend (Angular) :
-Utilisez Angular CLI pour le développement du frontend. L'application affichera une liste de produits, des pages de détails pour chaque produit, et un système de panier pour la gestion des articles sélectionnés par les utilisateurs.
+## 🛍️ ProjetMini – Application Web de Vente de Produits  
+🛠️ Angular, JSON Server, Render
 
-## Backend (JSON Server) : 
-Un serveur léger sera mis en place à l'aide de JSON Server pour simuler une API RESTful. Ce backend permettra de gérer les produits, y compris les opérations de création, de lecture, de mise à jour et de suppression (CRUD) des articles.
+### 📌 Description :
+ProjetMini est une application web e-commerce permettant aux utilisateurs de :
+- Parcourir une sélection de produits
+- Voir les détails de chaque article
+- Ajouter des articles au panier pour une gestion simplifiée des achats
 
-## Déploiement :
-L'application sera déployée sur un serveur d'hébergement comme Render, ce qui facilitera l'accès à l'application web en ligne. Ce projet ne comportera pas de système d'authentification, simplifiant ainsi le processus d'utilisation pour les visiteurs du site.
+### 💻 Frontend :
+Développé avec **Angular CLI**, l’interface affiche :
+- Une liste de produits
+- Des pages de détails individuelles
+- Un panier interactif pour suivre les sélections
+
+### 🔙 Backend :
+Le backend est simulé avec **JSON Server**, fournissant une API RESTful pour :
+- Créer
+- Lire
+- Mettre à jour
+- Supprimer (CRUD) des produits
+
+### 🚀 Déploiement :
+L'application est hébergée sur **Render**, ce qui la rend facilement accessible en ligne. Aucun système d’authentification n’est inclus, afin de garder une expérience fluide pour les visiteurs.
